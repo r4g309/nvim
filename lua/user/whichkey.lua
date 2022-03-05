@@ -181,6 +181,12 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
+  x = {
+    name = "Todo",
+    q = { "<cmd>TodoQuickFix<cr>", "Quick Fix List" },
+    t = { "<cmd>TodoTelescope<cr>", "Todo Telescope" },
+    l = { "<cmd>TodoLocList<cr>", "Location List" },
+  },
 }
 
 which_key.setup(setup)

@@ -62,8 +62,13 @@ return packer.startup(function(use)
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   --use "lunarvim/darkplus.nvim"
-  use 'olimorris/onedarkpro.nvim'
+  use "olimorris/onedarkpro.nvim"
+  use 'folke/tokyonight.nvim'
+  -- Surround Plugin
   use 'https://tpope.io/vim/surround.git'
+  -- Todo Plugin
+  --use "folke/todo-comments.nvim"
+  use "TobTobXX/todo-comments.nvim"
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
