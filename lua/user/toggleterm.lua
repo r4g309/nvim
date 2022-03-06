@@ -3,6 +3,15 @@ if not status_ok then
 	return
 end
 
+local function check_terminal()
+  local handle = io.open('/usr/bin/zsh')
+  if handle == nil then
+    return vim.o.shell
+  end
+  handle:close()
+  return '/usr/bin/zsh'
+end
+
 toggleterm.setup({
 	size = 20,
 	open_mapping = [[<c-\>]],
@@ -15,7 +24,7 @@ toggleterm.setup({
 	persist_size = true,
 	direction = "float",
 	close_on_exit = true,
-	shell = vim.o.shell,
+  shell = check_terminal(),
 	float_opts = {
 		border = "curved",
 		winblend = 0,
@@ -25,6 +34,7 @@ toggleterm.setup({
 		},
 	},
 })
+
 
 function _G.set_terminal_keymaps()
   local opts = {noremap = true}
