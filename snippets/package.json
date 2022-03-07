@@ -8,6 +8,26 @@
       {
         "language": "html",
         "path": "./html.json"
+      },
+      {
+        "language": "python",
+        "path": "./django/forms.json"
+      },
+      {
+        "language": "python",
+        "path": "./django/views.json"
+      },
+      {
+        "language": "python",
+        "path": "./django/models.json"
+      },
+      {
+        "language": "python",
+        "path": "./django/imports.json"
+      },
+      {
+        "language": "python",
+        "path": "./django/filetemplates.json"
       }
     ]
   }
