@@ -10,6 +10,10 @@
         "path": "./html.json"
       },
       {
+        "language": "htmldjango",
+        "path": "./html.json"
+      },
+      {
         "language": "python",
         "path": "./django/forms.json"
       },
